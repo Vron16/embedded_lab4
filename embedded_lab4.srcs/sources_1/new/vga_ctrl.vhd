@@ -49,45 +49,49 @@ architecture Behavioral of vga_ctrl is
 signal hcount_sig : std_logic_vector (9 downto 0) := (others => '0');
 signal vcount_sig : std_logic_vector (9 downto 0) := (others => '0');
 
+signal vs_sig, hs_sig, vid_sig : std_logic := '1';
+
 begin
 
 hcount <= hcount_sig;
 vcount <= vcount_sig;
 
+hs <= hs_sig;
+vs <= vs_sig;
+
+vid <= vid_sig;
+
 process (clk)
 begin
     if (rising_edge(clk)) then
         if (en = '1') then
-            if (unsigned(hcount_sig) <= 639 and unsigned(vcount_sig) <= 479) then
-                vid <= '1';
-                hs <= '1';
-                vs <= '1';
+            if (unsigned(hcount_sig) < 799) then
+                hcount_sig <= std_logic_vector(unsigned(hcount_sig)+1);
             else
-                vid <= '0';
-                if (unsigned(hcount_sig) >= 656 and unsigned(hcount_sig) <= 751) then
-                    hs <= '0';
-                else if (unsigned(hcount_sig) < 800) then
-                    hs <= '1';
-                end if;
-                if (unsigned(vcount_sig) >= 490 and unsigned(vcount_sig) <= 491) then
-                    vs <= '0';
-                else if (unsigned(vcount_sig) < 525) then
-                    vs <= '1';
-                end if;
-            end if;
-            hcount_sig <= std_logic_vector(unsigned(hcount_sig)+1);
-            if (unsigned(hcount_sig) = 800) then
                 hcount_sig <= (others => '0');
-                if (unsigned(vcount_sig) < 525) then
+                if(unsigned(vcount_sig) < 524) then
                     vcount_sig <= std_logic_vector(unsigned(vcount_sig)+1);
                 else
                     vcount_sig <= (others => '0');
                 end if;
             end if;
+            if (unsigned(hcount_sig) < 639 and unsigned(vcount_sig) < 479) then
+                vid_sig <= '1';
+            else
+                vid_sig <= '0';
+                if (unsigned(hcount_sig) > 655 and unsigned(hcount_sig) < 751) then
+                    hs_sig <= '0';
+                else 
+                    hs_sig <= '1';
+                end if;
+                if (unsigned(vcount_sig) > 489 and unsigned(vcount_sig) < 491) then
+                    vs_sig <= '0';
+                else 
+                    vs_sig <= '1';
+                end if;
+            end if;
        end if;
     end if;
- end if;
-end if;
 end process;             
 end Behavioral;
 

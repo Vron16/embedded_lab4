@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/SDK/2018.2/bin:/opt/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2018.2/bin
+  PATH=/usr/local/xilinx/SDK/2018.2/bin:/usr/local/xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/usr/local/xilinx/Vivado/2018.2/bin
 else
-  PATH=/opt/Xilinx/SDK/2018.2/bin:/opt/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2018.2/bin:$PATH
+  PATH=/usr/local/xilinx/SDK/2018.2/bin:/usr/local/xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/usr/local/xilinx/Vivado/2018.2/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/usr/local/xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/usr/local/xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/avin/Documents/embedded_lab4/embedded_lab4.runs/picture_synth_1'
+HD_PWD='/home/user/embedded_lab4/embedded_lab4.runs/picture_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vga_ctrl_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="vga_ctrl_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="25601600000fs"></ZoomStartTime>
+      <ZoomEndTime time="25856000001fs"></ZoomEndTime>
+      <Cursor1Time time="25644000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="logic" fp_name="/vga_ctrl_test/div">
+      <obj_property name="ElementShortName">div</obj_property>
+      <obj_property name="ObjectShortName">div</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/vga_ctrl_test/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/vga_ctrl_test/u4/hcount">
+      <obj_property name="ElementShortName">hcount[9:0]</obj_property>
+      <obj_property name="ObjectShortName">hcount[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/vga_ctrl_test/u4/vcount">
+      <obj_property name="ElementShortName">vcount[9:0]</obj_property>
+      <obj_property name="ObjectShortName">vcount[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/vga_ctrl_test/u4/vid">
+      <obj_property name="ElementShortName">vid</obj_property>
+      <obj_property name="ObjectShortName">vid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/vga_ctrl_test/u4/hs">
+      <obj_property name="ElementShortName">hs</obj_property>
+      <obj_property name="ObjectShortName">hs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/vga_ctrl_test/u4/vs">
+      <obj_property name="ElementShortName">vs</obj_property>
+      <obj_property name="ObjectShortName">vs</obj_property>
+   </wvobject>
+</wave_config>

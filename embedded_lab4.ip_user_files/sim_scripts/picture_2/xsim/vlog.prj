@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../embedded_lab4.srcs/sources_1/ip/picture_2/sim/picture.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

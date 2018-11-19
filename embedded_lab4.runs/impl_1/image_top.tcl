@@ -60,22 +60,27 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-7666-ece32/incrSyn
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/avin/Documents/embedded_lab4/embedded_lab4.cache/wt [current_project]
-  set_property parent.project_path /home/avin/Documents/embedded_lab4/embedded_lab4.xpr [current_project]
-  set_property ip_output_repo /home/avin/Documents/embedded_lab4/embedded_lab4.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/user/embedded_lab4/embedded_lab4.cache/wt [current_project]
+  set_property parent.project_path /home/user/embedded_lab4/embedded_lab4.xpr [current_project]
+  set_property ip_output_repo /home/user/embedded_lab4/embedded_lab4.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet /home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1/image_top.dcp
-  read_ip -quiet /home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_1/picture.xci
-  read_xdc /home/avin/Documents/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc
+  add_files -quiet /home/user/embedded_lab4/embedded_lab4.runs/synth_1/image_top.dcp
+  read_ip -quiet /home/user/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_4/picture.xci
+  read_xdc /home/user/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc
   link_design -top image_top -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]

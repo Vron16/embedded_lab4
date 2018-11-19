@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Sun Nov 18 19:24:53 2018
--- Host        : avin-MacBookPro running 64-bit Ubuntu 18.04.1 LTS
+-- Date        : Mon Nov 19 11:15:46 2018
+-- Host        : ece32 running 64-bit Ubuntu 16.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
---               /home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_1/picture_sim_netlist.vhdl
+--               /home/user/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_1/picture_sim_netlist.vhdl
 -- Design      : picture
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

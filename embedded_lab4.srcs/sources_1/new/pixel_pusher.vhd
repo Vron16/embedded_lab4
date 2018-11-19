@@ -43,16 +43,18 @@ begin
         if vs = '0' then
             addr_sig <= (others => '0');
         end if;
-        if en = '1' and vid = '1' and unsigned(hcount) < 480 then
-            addr_sig <= std_logic_vector(unsigned(addr_sig) + 1);
-            R <= pixel(7 downto 5) & "00";
-            G <= pixel(4 downto 2) & "000";
-            B <= pixel(1 downto 0) & "000";
-        else
-            R <= (others => '0');
-            G <= (others => '0');
-            B <= (others => '0');
-        end if; 
+        if en = '1' and vid = '1' then
+            if unsigned(hcount) < 481 then
+                addr_sig <= std_logic_vector(unsigned(addr_sig) + 1);
+                R <= pixel(7 downto 5) & "00";
+                G <= pixel(4 downto 2) & "000";
+                B <= pixel(1 downto 0) & "000";
+            else
+                R <= (others => '0');
+                G <= (others => '0');
+                B <= (others => '0');
+            end if; 
+        end if;
     end if;
 end process;
 

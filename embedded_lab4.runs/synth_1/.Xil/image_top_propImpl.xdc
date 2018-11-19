@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc rfile:../../../embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/user/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc rfile:../../../embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L11P_T1_SRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:129 export:INPUT save:INPUT read:READ} [current_design]

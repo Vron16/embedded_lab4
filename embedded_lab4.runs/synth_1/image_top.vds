@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Nov 18 21:34:09 2018
-# Process ID: 12283
-# Current directory: /home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1
+# Start of session at: Mon Nov 19 15:05:56 2018
+# Process ID: 5067
+# Current directory: /home/user/embedded_lab4/embedded_lab4.runs/synth_1
 # Command line: vivado -log image_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source image_top.tcl
-# Log file: /home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1/image_top.vds
-# Journal file: /home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1/vivado.jou
+# Log file: /home/user/embedded_lab4/embedded_lab4.runs/synth_1/image_top.vds
+# Journal file: /home/user/embedded_lab4/embedded_lab4.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source image_top.tcl -notrace
 Command: synth_design -top image_top -part xc7z010clg400-1
@@ -15,25 +15,25 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13259 
+INFO: Helper process launched with PID 5079 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1293.090 ; gain = 80.895 ; free physical = 1647 ; free virtual = 8729
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1280.391 ; gain = 80.891 ; free physical = 6970 ; free virtual = 25503
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'image_top' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:30]
-INFO: [Synth 8-3491] module 'clock_div' declared at '/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/clock_div.vhd:9' bound to instance 'u1' of component 'clock_div' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'clock_div' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/clock_div.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'clock_div' (1#1) [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/clock_div.vhd:18]
-INFO: [Synth 8-3491] module 'picture' declared at '/home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1/.Xil/Vivado-12283-avin-MacBookPro/realtime/picture_stub.vhdl:5' bound to instance 'u2' of component 'picture' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'picture' [/home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1/.Xil/Vivado-12283-avin-MacBookPro/realtime/picture_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'pixel_pusher' declared at '/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/pixel_pusher.vhd:17' bound to instance 'u3' of component 'pixel_pusher' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'pixel_pusher' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/pixel_pusher.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'pixel_pusher' (2#1) [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/pixel_pusher.vhd:32]
-INFO: [Synth 8-3491] module 'vga_ctrl' declared at '/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/vga_ctrl.vhd:35' bound to instance 'u4' of component 'vga_ctrl' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/vga_ctrl.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (3#1) [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/vga_ctrl.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'image_top' (4#1) [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'image_top' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:30]
+INFO: [Synth 8-3491] module 'clock_div' declared at '/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/clock_div.vhd:9' bound to instance 'u1' of component 'clock_div' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'clock_div' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/clock_div.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'clock_div' (1#1) [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/clock_div.vhd:18]
+INFO: [Synth 8-3491] module 'picture' declared at '/home/user/embedded_lab4/embedded_lab4.runs/synth_1/.Xil/Vivado-5067-ece32/realtime/picture_stub.vhdl:5' bound to instance 'u2' of component 'picture' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'picture' [/home/user/embedded_lab4/embedded_lab4.runs/synth_1/.Xil/Vivado-5067-ece32/realtime/picture_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'pixel_pusher' declared at '/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/pixel_pusher.vhd:17' bound to instance 'u3' of component 'pixel_pusher' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'pixel_pusher' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/pixel_pusher.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'pixel_pusher' (2#1) [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/pixel_pusher.vhd:32]
+INFO: [Synth 8-3491] module 'vga_ctrl' declared at '/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/vga_ctrl.vhd:35' bound to instance 'u4' of component 'vga_ctrl' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/vga_ctrl.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (3#1) [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/vga_ctrl.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'image_top' (4#1) [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/new/image_top.vhd:30]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1336.715 ; gain = 124.520 ; free physical = 1662 ; free virtual = 8744
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.016 ; gain = 125.516 ; free physical = 6982 ; free virtual = 25515
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -46,50 +46,48 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1336.715 ; gain = 124.520 ; free physical = 1662 ; free virtual = 8744
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.016 ; gain = 125.516 ; free physical = 6982 ; free virtual = 25515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1336.715 ; gain = 124.520 ; free physical = 1662 ; free virtual = 8744
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.016 ; gain = 125.516 ; free physical = 6982 ; free virtual = 25515
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_1/picture/picture_in_context.xdc] for cell 'u2'
-Finished Parsing XDC File [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_1/picture/picture_in_context.xdc] for cell 'u2'
-Parsing XDC File [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc]
-Finished Parsing XDC File [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/avin/Documents/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/image_top_propImpl.xdc].
+Parsing XDC File [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_4/picture/picture_in_context.xdc] for cell 'u2'
+Finished Parsing XDC File [/home/user/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_4/picture/picture_in_context.xdc] for cell 'u2'
+Parsing XDC File [/home/user/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc]
+Finished Parsing XDC File [/home/user/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/embedded_lab4/embedded_lab4.srcs/constrs_1/imports/Downloads/zybo_blinker.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/image_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/image_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1656.309 ; gain = 0.000 ; free physical = 1405 ; free virtual = 8486
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.625 ; gain = 0.000 ; free physical = 6731 ; free virtual = 25268
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u2' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1331 ; free virtual = 8513
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6809 ; free virtual = 25342
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1331 ; free virtual = 8512
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6809 ; free virtual = 25342
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for u2. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1330 ; free virtual = 8511
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6811 ; free virtual = 25344
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "div" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "vcount_sig" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1316 ; free virtual = 8498
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6803 ; free virtual = 25336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -102,19 +100,21 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     27 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               27 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -125,21 +125,23 @@ Hierarchical RTL Component report
 Module clock_div 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               27 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     27 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
 Module pixel_pusher 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
 +---Registers : 
+	               18 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
 +---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 Module vga_ctrl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -147,8 +149,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	               10 Bit    Registers := 2     
 	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -165,19 +165,17 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5545] ROM "u1/div" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "u4/vcount_sig" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'u3/B_reg[0]' (FD) to 'u3/B_reg[2]'
-INFO: [Synth 8-3886] merging instance 'u3/B_reg[1]' (FD) to 'u3/B_reg[2]'
-INFO: [Synth 8-3886] merging instance 'u3/B_reg[2]' (FD) to 'u3/R_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u3/G_reg[0]' (FD) to 'u3/R_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u3/G_reg[1]' (FD) to 'u3/R_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u3/G_reg[2]' (FD) to 'u3/R_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u3/R_reg[0]' (FD) to 'u3/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u3/B_reg[0]' (FDE) to 'u3/B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u3/B_reg[1]' (FDE) to 'u3/B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u3/B_reg[2]' (FDE) to 'u3/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u3/G_reg[0]' (FDE) to 'u3/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u3/G_reg[1]' (FDE) to 'u3/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u3/G_reg[2]' (FDE) to 'u3/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u3/R_reg[0]' (FDE) to 'u3/R_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u3/R_reg[1] )
 WARNING: [Synth 8-3332] Sequential element (u3/R_reg[1]) is unused and will be removed from module image_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1468 ; free virtual = 8551
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6793 ; free virtual = 25326
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -189,13 +187,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1209 ; free virtual = 8365
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6665 ; free virtual = 25200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6663 ; free virtual = 25198
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,7 +205,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6663 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -231,7 +229,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -244,7 +242,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,25 +254,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -293,36 +291,35 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |picture_bbox_0 |     1|
 |2     |BUFG           |     1|
-|3     |CARRY4         |    12|
-|4     |LUT1           |     3|
-|5     |LUT2           |     3|
-|6     |LUT3           |     9|
-|7     |LUT4           |     9|
-|8     |LUT5           |    20|
-|9     |LUT6           |    13|
-|10    |FDRE           |    76|
-|11    |FDSE           |     1|
-|12    |IBUF           |     1|
-|13    |OBUF           |    18|
+|3     |CARRY4         |     5|
+|4     |LUT1           |     2|
+|5     |LUT2           |     6|
+|6     |LUT3           |    27|
+|7     |LUT4           |     8|
+|8     |LUT5           |     7|
+|9     |LUT6           |    16|
+|10    |FDRE           |    53|
+|11    |IBUF           |     1|
+|12    |OBUF           |    18|
 +------+---------------+------+
 
 Report Instance Areas: 
 +------+---------+-------------+------+
 |      |Instance |Module       |Cells |
 +------+---------+-------------+------+
-|1     |top      |             |   174|
-|2     |  u1     |clock_div    |    45|
+|1     |top      |             |   152|
+|2     |  u1     |clock_div    |     7|
 |3     |  u3     |pixel_pusher |    32|
-|4     |  u4     |vga_ctrl     |    69|
+|4     |  u4     |vga_ctrl     |    85|
 +------+---------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.309 ; gain = 444.113 ; free physical = 1332 ; free virtual = 8415
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6655 ; free virtual = 25197
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1656.309 ; gain = 124.520 ; free physical = 1390 ; free virtual = 8473
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1656.316 ; gain = 444.113 ; free physical = 1390 ; free virtual = 8473
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1681.625 ; gain = 125.516 ; free physical = 6712 ; free virtual = 25254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1681.625 ; gain = 482.125 ; free physical = 6712 ; free virtual = 25254
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -330,11 +327,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:44 . Memory (MB): peak = 1656.316 ; gain = 449.953 ; free physical = 1392 ; free virtual = 8473
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 1681.625 ; gain = 493.688 ; free physical = 6707 ; free virtual = 25249
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint '/home/avin/Documents/embedded_lab4/embedded_lab4.runs/synth_1/image_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/user/embedded_lab4/embedded_lab4.runs/synth_1/image_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file image_top_utilization_synth.rpt -pb image_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1680.320 ; gain = 0.000 ; free physical = 1393 ; free virtual = 8474
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 18 21:35:01 2018...
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1705.637 ; gain = 0.000 ; free physical = 6713 ; free virtual = 25248
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 19 15:06:41 2018...

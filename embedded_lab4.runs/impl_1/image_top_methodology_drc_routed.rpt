@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Sun Nov 18 21:36:38 2018
-| Host         : avin-MacBookPro running 64-bit Ubuntu 18.04.1 LTS
+| Date         : Mon Nov 19 15:08:00 2018
+| Host         : ece32 running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_methodology -file image_top_methodology_drc_routed.rpt -pb image_top_methodology_drc_routed.pb -rpx image_top_methodology_drc_routed.rpx
 | Design       : image_top
 | Device       : xc7z010clg400-1
