@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Mon Nov 19 15:05:54 2018
+-- Date        : Mon Nov 19 15:05:53 2018
 -- Host        : ece32 running 64-bit Ubuntu 16.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/user/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_4/picture_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top picture -prefix
+--               picture_ picture_stub.vhdl
 -- Design      : picture
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

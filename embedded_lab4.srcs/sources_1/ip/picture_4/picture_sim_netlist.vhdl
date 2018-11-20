@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Mon Nov 19 15:05:55 2018
+-- Date        : Mon Nov 19 15:05:54 2018
 -- Host        : ece32 running 64-bit Ubuntu 16.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/user/embedded_lab4/embedded_lab4.srcs/sources_1/ip/picture_4/picture_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top picture -prefix
+--               picture_ picture_sim_netlist.vhdl
 -- Design      : picture
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -77,8 +77,6 @@ entity picture_blk_mem_gen_mux is
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_53\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_54\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_mux : entity is "blk_mem_gen_mux";
 end picture_blk_mem_gen_mux;
 
 architecture STRUCTURE of picture_blk_mem_gen_mux is
@@ -2572,8 +2570,6 @@ entity picture_blk_mem_gen_prim_wrapper_init is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 17 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end picture_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of picture_blk_mem_gen_prim_wrapper_init is
@@ -17309,8 +17305,6 @@ entity picture_blk_mem_gen_prim_width is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 17 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end picture_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of picture_blk_mem_gen_prim_width is
@@ -18620,8 +18614,6 @@ entity picture_blk_mem_gen_generic_cstr is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 17 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end picture_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of picture_blk_mem_gen_generic_cstr is
@@ -20275,8 +20267,6 @@ entity picture_blk_mem_gen_top is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 17 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end picture_blk_mem_gen_top;
 
 architecture STRUCTURE of picture_blk_mem_gen_top is
@@ -20298,8 +20288,6 @@ entity picture_blk_mem_gen_v8_4_1_synth is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 17 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end picture_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of picture_blk_mem_gen_v8_4_1_synth is
@@ -20527,8 +20515,6 @@ entity picture_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of picture_blk_mem_gen_v8_4_1 : entity is 8;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of picture_blk_mem_gen_v8_4_1 : entity is "zynq";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of picture_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of picture_blk_mem_gen_v8_4_1 : entity is "yes";
 end picture_blk_mem_gen_v8_4_1;

@@ -79,7 +79,7 @@ begin
                 vid_sig <= '1';
             else
                 vid_sig <= '0';
-                if (unsigned(hcount_sig) > 655 and unsigned(hcount_sig) < 751) then
+                if (unsigned(hcount_sig) >= 655 and unsigned(hcount_sig) < 751) then
                     hs_sig <= '0';
                 else 
                     hs_sig <= '1';
